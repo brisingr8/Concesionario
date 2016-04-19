@@ -1,5 +1,5 @@
 package concesionarioCoches;
-
+//jias jias jias
 import java.util.regex.Pattern;
 
 public class Coche {
@@ -30,7 +30,7 @@ public class Coche {
 		if (esValida(matricula))
 			this.matricula = estandarizarMatricula(matricula);
 		else
-			throw new MatriculaNoValidaException("La matrÌcula no es v·lida. ");
+			throw new MatriculaNoValidaException("La matr√≠cula no es v√°lida. ");
 	}
 	
 	private String estandarizarMatricula(String matricula) {
@@ -46,14 +46,14 @@ public class Coche {
 		if (color != null)
 			this.color = color;
 		else
-			throw new ColorNoValidoException("El color no es v·lido. ");
+			throw new ColorNoValidoException("El color no es v√°lido. ");
 	}
 
 	private void setModelo(Modelo modelo) throws ModeloNoValidoException {
 		if (modelo != null)
 			this.modelo = modelo;
 		else
-			throw new ModeloNoValidoException("El modelo no es v·lido. ");
+			throw new ModeloNoValidoException("El modelo no es v√°lido. ");
 	}
 
 	@Override
